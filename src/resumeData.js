@@ -1,8 +1,8 @@
 let resumeData = {
-  imagebaseurl: "https://rbhatia46.github.io/",
+  imagebaseurl: "https://learnwithratnesh.github.io/aboutme/img/personal.jpg",
   name: "Ratnesh Tiwari",
   role: "Frontend Developer",
-  linkedinId: "Your LinkedIn Id",
+  linkedinId: "https://www.linkedin.com/in/ratnesh-tiwari-427ab57a",
   skypeid: "Your skypeid",
   roleDescription:
     "A technology-focused role that seeks to create digital software that entices the user into a seamless interaction between human and computer.",
@@ -42,6 +42,7 @@ let resumeData = {
       MonthOfLeaving: "",
       YearOfLeaving: "April 2016 to Oct 2018",
       Achievements: "",
+      logo: "images/logo/tata.png",
     },
     {
       CompanyName: "Zensar",
@@ -49,6 +50,7 @@ let resumeData = {
       MonthOfLeaving: "",
       YearOfLeaving: "October 2018 to Feb 2020",
       Achievements: "",
+      logo: "images/logo/zensar.png",
     },
     {
       CompanyName: "Mastercard",
@@ -56,12 +58,16 @@ let resumeData = {
       MonthOfLeaving: "",
       YearOfLeaving: "March 2020 to present",
       Achievements: "",
+      logo: "images/logo/mc_symbol.png",
     },
   ],
-  skillsDescription: "Your skills here",
+  skillsDescription: "My skills",
   skills: [
     {
       skillname: "HTML5",
+    },
+    {
+      skillname: "Javascript",
     },
     {
       skillname: "CSS",
@@ -69,11 +75,14 @@ let resumeData = {
     {
       skillname: "Reactjs",
     },
+    {
+      skillname: "Angular",
+    },
   ],
   portfolio: [
     {
-      name: "project1",
-      description: "mobileapp",
+      name: "Vipps",
+      description: "Norwegian mobile payment application",
       imgurl: "images/portfolio/phone.jpg",
     },
     {
@@ -94,12 +103,17 @@ let resumeData = {
   ],
   testimonials: [
     {
-      description: "This is a sample testimonial",
-      name: "Some technical guy",
+      description:
+        "Any fool can write code that a computer can understand. Good programmers write code that humans can understand",
+      name: "Martin Fowler",
     },
     {
-      description: "This is a sample testimonial",
-      name: "Some technical guy",
+      description: "First, solve the problem. Then, write the code.",
+      name: "John Johnson",
+    },
+    {
+      description: "Experience is the name everyone gives to their mistakes.",
+      name: "Oscar Wilde",
     },
   ],
 };
