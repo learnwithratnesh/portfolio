@@ -15,14 +15,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@main
       - name: Install dependencies
-        run: npm install
+        run: yarn install
       - name: Build dependencies
-        run: npm run build
+        run: yarn build
       - name: Archive production artifact
         uses: actions/upload-artifact@main
         with:
           name: dist
-          path: build
+          path: dist
   deploy:
     name: Deploy
     needs: build
@@ -34,7 +34,7 @@ jobs:
         uses: actions/download-artifact@main
         with:
           name: dist
-          path: build
+          path: dist
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
