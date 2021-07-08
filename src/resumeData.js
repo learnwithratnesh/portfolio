@@ -34,15 +34,21 @@ let resumeData = {
       MonthOfPassing: "Aug",
       YearOfPassing: "2015",
     },
+    {
+      UniversityName: "MPBSE",
+      specialization: "PCM",
+      MonthOfPassing: "Aug",
+      YearOfPassing: "2011",
+    },
   ],
   work: [
     {
-      CompanyName: "Tata Consultancy Services",
-      specialization: "System Engineer",
+      CompanyName: "Mastercard",
+      specialization: "Senior Software Engineer",
       MonthOfLeaving: "",
-      YearOfLeaving: "April 2016 to Oct 2018",
+      YearOfLeaving: "March 2020 to present",
       Achievements: "",
-      logo: "images/logo/tata.png",
+      logo: "images/logo/mc_symbol.png",
     },
     {
       CompanyName: "Zensar",
@@ -53,15 +59,15 @@ let resumeData = {
       logo: "images/logo/zensar.png",
     },
     {
-      CompanyName: "Mastercard",
-      specialization: "Senior Software Engineer",
+      CompanyName: "Tata Consultancy Services",
+      specialization: "System Engineer",
       MonthOfLeaving: "",
-      YearOfLeaving: "March 2020 to present",
+      YearOfLeaving: "April 2016 to Oct 2018",
       Achievements: "",
-      logo: "images/logo/mc_symbol.png",
+      logo: "images/logo/tata.png",
     },
   ],
-  skillsDescription: "My skills",
+  skillsDescription: "Technologies",
   skills: [
     {
       skillname: "HTML5",

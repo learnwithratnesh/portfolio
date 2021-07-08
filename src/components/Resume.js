@@ -1,25 +1,17 @@
 import React, { Component } from "react";
-import AOS from "aos";
 export default class Resume extends Component {
-  componentDidMount() {
-    // or simply just AOS.init();
-    AOS.init({
-      // initialise with other settings
-      duration: 2000,
-    });
-  }
   render() {
     let resumeData = this.props.resumeData;
     return (
       <section id="resume">
         <div className="row education">
-          <div className="three columns header-col">
+          <div data-aos="fade-right" className="three columns header-col">
             <h1>
               <span>Education</span>
             </h1>
           </div>
 
-          <div className="nine columns main-col">
+          <div data-aos="fade-left" className="nine columns main-col">
             {resumeData.education &&
               resumeData.education.map((item) => {
                 return (
@@ -41,7 +33,7 @@ export default class Resume extends Component {
           </div>
         </div>
         <div className="row work">
-          <div className="three columns header-col">
+          <div data-aos="fade-right" className="three columns header-col">
             <h1>
               <span>Work</span>
             </h1>
@@ -52,7 +44,7 @@ export default class Resume extends Component {
               resumeData.work.map((item) => {
                 return (
                   <div className="row item">
-                    <div data-aos="fade-down" className="twelve columns">
+                    <div data-aos="fade-left" className="twelve columns">
                       <img
                         src={`${item.logo}`}
                         alt=""
@@ -75,7 +67,7 @@ export default class Resume extends Component {
         </div>
 
         <div className="row skill">
-          <div className="three columns header-col">
+          <div data-aos="fade-right" className="three columns header-col">
             <h1>
               <span>Skills</span>
             </h1>
@@ -85,7 +77,7 @@ export default class Resume extends Component {
             <p>{resumeData.skillsDescription}</p>
 
             <div className="bars">
-              <ul className="skills">
+              <ul data-aos="fade-left" className="skills">
                 {resumeData.skills &&
                   resumeData.skills.map((item) => {
                     return (

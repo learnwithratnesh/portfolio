@@ -8,7 +8,15 @@ import Testimonials from "./components/Testimonials";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import resumeData from "./resumeData";
+import AOS from "aos";
 class App extends Component {
+  componentDidMount() {
+    // or simply just AOS.init();
+    AOS.init({
+      // initialise with other settings
+      duration: 2000,
+    });
+  }
   render() {
     return (
       <div className="App">
