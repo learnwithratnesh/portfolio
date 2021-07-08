@@ -1,5 +1,13 @@
 import React, { Component } from "react";
+import AOS from "aos";
 export default class Resume extends Component {
+  componentDidMount() {
+    // or simply just AOS.init();
+    AOS.init({
+      // initialise with other settings
+      duration: 2000,
+    });
+  }
   render() {
     let resumeData = this.props.resumeData;
     return (
@@ -44,7 +52,7 @@ export default class Resume extends Component {
               resumeData.work.map((item) => {
                 return (
                   <div className="row item">
-                    <div className="twelve columns">
+                    <div data-aos="fade-down" className="twelve columns">
                       <img
                         src={`${item.logo}`}
                         alt=""
