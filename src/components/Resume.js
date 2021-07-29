@@ -77,11 +77,11 @@ export default class Resume extends Component {
             <p>{resumeData.skillsDescription}</p>
 
             <div className="bars">
-              <ul data-aos="fade-left" className="skills">
+              <ul className="skills">
                 {resumeData.skills &&
                   resumeData.skills.map((item) => {
                     return (
-                      <li>
+                      <li data-aos="fade-left">
                         <span
                           className={`bar-expand ${item.skillname.toLowerCase()}`}
                         ></span>
