@@ -5,7 +5,7 @@ let resumeData = {
   linkedinId: "https://www.linkedin.com/in/ratnesh-tiwari-427ab57a",
   skypeid: "Your skypeid",
   roleDescription:
-    "A technology-focused role that seeks to create digital software that entices the user into a seamless interaction between human and computer.",
+    "Technology-Focused role that seeks to create digital software that entices the user into a seamless interaction between human and computer.",
   socialLinks: [
     {
       name: "linkedin",

@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
+import Typical from "react-typical";
 export default class Header extends Component {
   render() {
     let resumeData = this.props.resumeData;
@@ -48,7 +49,21 @@ export default class Header extends Component {
             <div className="banner-text">
               <h1 className="responsive-headline">{resumeData.name}</h1>
               <h3 style={{ color: "#fff", fontFamily: "sans-serif " }}>
-                A {resumeData.role}.{resumeData.roleDescription}
+                {/* A {resumeData.role}.{resumeData.roleDescription} */}
+                <Typical
+                  steps={[
+                    "Hello world!",
+                    500,
+                    "I'm Full Stack Engineer",
+                    500,
+                    "I'm Traveller",
+                    500,
+                    `I'm a ${resumeData.role}.${resumeData.roleDescription}`,
+                    500,
+                  ]}
+                  loop={Infinity}
+                  wrapper="p"
+                />
               </h3>
               <hr />
               <ul className="social">
