@@ -56,8 +56,6 @@ export default class Header extends Component {
                     500,
                     "I'm Full Stack Engineer",
                     500,
-                    "I'm Traveller",
-                    500,
                     `I'm a ${resumeData.role}.${resumeData.roleDescription}`,
                     500,
                   ]}
