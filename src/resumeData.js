@@ -26,7 +26,7 @@ let resumeData = {
   aboutme:
     "I am currently working as a Software Engineer at Mastercard. Previously, I worked as a Software Engineer at Zensar Technologies and I started my career with Tata Consultancy Services.I pursued my Bachelors Degree of Engineering with specialisation in Computer Science.",
   address: "India",
-  website: "https://learnwithratnesh.github.io/aboutme/index.html",
+  website: "https://learnwithratnesh.github.io/resume/",
   education: [
     {
       UniversityName: "Rajiv Gandhi Proudyogiki Vishwavidyalaya",
