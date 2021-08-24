@@ -4,7 +4,7 @@ export default class ContactUs extends Component {
     let resumeData = this.props.resumeData;
     return (
       <section id="contact">
-        <div className="row section-head">
+        <div className="row">
           <div className="ten columns">
             <p className="lead">
               Feel free to contact me for any work or suggestions below
@@ -14,7 +14,13 @@ export default class ContactUs extends Component {
         <div className="row">
           <aside className="eigth columns footer-widgets">
             <div className="widget">
-              <h4>Linked in :{resumeData.linkedinId}</h4>
+              <ul className="social-links">
+                <li>
+                  <a href="mailto:ratneshtanj26@gmail.com">
+                    <i className="fa fa-envelope" />
+                  </a>
+                </li>
+              </ul>
             </div>
           </aside>
         </div>
